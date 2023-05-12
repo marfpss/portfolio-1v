@@ -13,6 +13,10 @@
   padding: 20px;
 }
 
+#card {
+  border: 5px solid var(--cor-secundaria);
+}
+
 #name {
   margin-top: 40px;
   font-weight: 600;

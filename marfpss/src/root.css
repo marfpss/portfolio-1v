@@ -1,25 +1,25 @@
 :root {
-    /* Cores primárias */
+
     --cor-primaria: #0d47a1;
     --cor-primaria-escura: #002171;
     --cor-primaria-clara: #5472d3;
   
-    /* Cores secundárias */
+
     --cor-secundaria: #04153b;
     --cor-secundaria-escura: #030c20;
     --cor-secundaria-clara: #0036ab;
   
-    /* Cores de fundo */
+
     --cor-fundo: var(--gradiente);
     --cor-fundo-escuro: var(--gradiente);
     --cor-fundo-claro: #484848;
   
-    /* Cores de texto */
+    
     --cor-texto: #ffffff;
     --cor-texto-claro: #eeeeee;
     --cor-texto-suave: #aaaaaa;
   
-    /* Gradiente */
+    
     --gradiente: linear-gradient(to bottom right, var(--cor-primaria), var(--cor-secundaria) , var(--cor-secundaria-escura));
   }
   

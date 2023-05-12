@@ -1,65 +1,95 @@
-#name:hover , #surname:hover , #about:hover , #description:hover , #icon:hover {
-    color: var(--cor-primaria);
+#name:hover,
+#surname:hover,
+#about:hover,
+#description:hover,
+#icon:hover {
+  color: var(--cor-primaria);
 }
 
-#container , #card {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-  }
+#container,
+#card {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 #name {
-    margin-top: 40px;
-    font-weight: 600;
+  margin-top: 40px;
+  font-weight: 600;
 }
 
 #surname {
-    margin-top: 10px;
-    font-weight: 300;
-    font-size: 20px;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 #about {
-    margin: 10px;
-    font-weight: 600;
-    font-size: 20px;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 #description {
-    margin: 10px;
-    font-weight: 100;
+  margin: 10px;
+  font-weight: 100;
 }
 
-
 .avatar img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-top: 60px;
-  }
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 60px;
+}
 
-  .avatar img:hover {
-    border: 3px solid var(--cor-primaria);
-  }
-  
-  .icon-link {
-    margin: 0 10px;
-  }
-  
-  .icon {
+.avatar img:hover {
+  border: 3px solid var(--cor-primaria);
+}
+
+.icon-link {
+  margin: 0 10px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #333;
+  margin-top: 10px;
+  border-left: #333;
+}
+
+.icon:hover {
+  color: var(--cor-primaria);
+}
+
+@media screen and (max-width: 768px) {
+  #name {
+    margin-top: 20px;
     font-size: 24px;
-    color: #333;
-    margin-top: 10px;
   }
 
-  .icon:hover {
-    color: var(--cor-primaria);
+  #surname {
+    margin-top: 5px;
+    font-size: 16px;
   }
-  
-  @media (min-width: 768px) {
-    .avatar img {
-      width: 200px;
-      height: 200px;
-    }
+
+  #about {
+    margin: 10px;
+    font-size: 20px;
   }
-  
+
+  #description {
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  .avatar img {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+  }
+
+  .icon {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}

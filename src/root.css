@@ -1,25 +1,22 @@
 :root {
-  --cor-primaria: #0d47a1;
-  --cor-primaria-escura: #002171;
-  --cor-primaria-clara: #5472d3;
+  --cor-primaria: #104088;
+  --cor-primaria-escura: #ffffff;
+  --cor-primaria-clara: #1636a0;
 
-  --cor-secundaria: #04153b;
-  --cor-secundaria-escura: #030c20;
+  --cor-secundaria: #000000;
+  --cor-secundaria-escura: #000000;
   --cor-secundaria-clara: #0036ab;
 
   --cor-fundo: var(--gradiente);
   --cor-fundo-escuro: var(--gradiente);
   --cor-fundo-claro: #484848;
+  --cor-fundo-card: #000000ab;
 
   --cor-texto: #ffffff;
   --cor-texto-night: #000000;
   --cor-texto-claro: #eeeeee;
   --cor-texto-suave: #aaaaaa;
 
-  --gradiente: linear-gradient(
-    to bottom right,
-    var(--cor-primaria),
-    var(--cor-secundaria),
-    var(--cor-secundaria-escura)
-  );
+  --gradiente: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
+

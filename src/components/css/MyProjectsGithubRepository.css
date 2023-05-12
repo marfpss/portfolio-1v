@@ -8,7 +8,6 @@
   max-width: 100%;
   margin: 20px auto;
   padding: 20px;
-  border: 4px solid var(--cor-secundaria);
 }
 
 h1 {
@@ -38,8 +37,10 @@ h1 {
 .project-link {
   margin-top: 10px;
   font-size: 18px;
-  text-decoration: underline;
-  color: var(--cor-primaria);
+  text-decoration: none;
+  color: var(--cor-texto);
+  border-radius: 10px;
+  text-decoration:underline;
 }
 
 @media screen and (max-width: 768px) {

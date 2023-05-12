@@ -23,7 +23,7 @@
 }
 
 #root {
-  background: var(--cor-primaria);
+  background: var(--gradiente);
   background-size: cover;
   background-repeat: no-repeat;
   height: fit-content;

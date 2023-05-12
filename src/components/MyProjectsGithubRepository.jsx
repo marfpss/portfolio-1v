@@ -27,15 +27,15 @@ const MyProjectsGithubRepository = ({ username }) => {
       >
         {projects.map((project) => (
           <div className="project" key={project.id}>
-            <div className="project-name">{project.name}</div>
-            <div className="project-description">{project.description}</div>
+            <div className="project-name" id="project-name">{project.name}</div>
+            <div className="project-description" id="project.description">{project.description}</div>
             <a
               className="project-link"
               href={project.html_url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Link para o repositório do projeto
+              Ir para o repositório 
             </a>
           </div>
         ))}

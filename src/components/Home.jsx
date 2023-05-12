@@ -44,7 +44,7 @@ const Home = () => {
         <div id="icon" className="d-flex justify-content-center">
           <a
             id="icon"
-            target="_blank"
+            rel='noreferrer'
             href="https://www.instagram.com/marcelokkk_019/"
             className="icon-link"
           >
@@ -52,7 +52,7 @@ const Home = () => {
           </a>
           <a
             id="icon"
-            target="_blank"
+            rel='noreferrer'
             href="https://github.com/marfpss"
             className="icon-link"
           >

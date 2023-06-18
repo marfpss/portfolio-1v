@@ -54,4 +54,4 @@ Você pode me contatar por meio dos seguintes canais:
 - E-mail: mbr22251@gmail.com 📧
 - LinkedIn: [Marcelo Henrique](https://www.linkedin.com/in/marcelo-henrique-181b80256) 🔗
 
-Sinta-se à vontade para explorar o meu portfólio e entrar em contato comigo para qualquer dúvida, sugestão ou oportunidade de colaboração! 😊🚀"
+Sinta-se à vontade para explorar o meu portfólio e entrar em contato comigo para qualquer dúvida, sugestão ou oportunidade de colaboração! 😊🚀

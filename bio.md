@@ -42,7 +42,5 @@ Se você estiver procurando por um desenvolvedor dedicado, comprometido e apaixo
 </div>
 
 <h1> 😼 Github Status </h1>
-
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=marfpss&show_icons=true&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
-
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=marfpss&show_icons=true&theme=transparent)

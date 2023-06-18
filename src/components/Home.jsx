@@ -1,19 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import ReactMarkdown from 'react-markdown';
-import { FaSun, FaMoon, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import './css/Home.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import ReactMarkdown from "react-markdown";
+import { FaSun, FaMoon, FaInstagram, FaLinkedin } from "react-icons/fa";
+import "./css/Home.css";
 
 const Home = () => {
-  const [bio, setBio] = useState('');
-  const [readme, setReadme] = useState('');
+  const [bio, setBio] = useState("");
+  const [readme, setReadme] = useState("");
   const [projects, setProjects] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const fetchBio = async () => {
       try {
-        const response = await axios.get('https://api.github.com/users/marfpss');
+        const response = await axios.get(
+          "https://api.github.com/users/marfpss"
+        );
         const { bio } = response.data;
         setBio(bio);
       } catch (error) {
@@ -23,7 +25,9 @@ const Home = () => {
 
     const fetchReadme = async () => {
       try {
-        const response = await axios.get('https://raw.githubusercontent.com/marfpss/portfolio/master/bio.md');
+        const response = await axios.get(
+          "https://raw.githubusercontent.com/marfpss/portfolio/master/bio.md"
+        );
         setReadme(response.data);
       } catch (error) {
         console.log(error);
@@ -32,7 +36,9 @@ const Home = () => {
 
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('https://api.github.com/users/marfpss/repos');
+        const response = await axios.get(
+          "https://api.github.com/users/marfpss/repos"
+        );
         setProjects(response.data);
       } catch (error) {
         console.log(error);
@@ -49,31 +55,44 @@ const Home = () => {
   };
 
   return (
-    <div className={`container ${darkMode ? 'dark' : ''}`}>
-      <img src="https://avatars.githubusercontent.com/marfpss" alt="Perfil" className="profile-image" />
+    <div className={`container ${darkMode ? "dark" : ""}`}>
+      <img
+        src="https://avatars.githubusercontent.com/marfpss"
+        alt="Perfil"
+        className="profile-image"
+      />
       <h1 className="name">
-        Marcelo{' '}
+        Marcelo{" "}
         <button className="toggle-button" onClick={toggleDarkMode}>
           {darkMode ? <FaSun /> : <FaMoon />}
         </button>
       </h1>
-      <p className={`description ${darkMode ? 'dark' : ''}`}>{bio}</p>
+      {/* <p className={`description ${darkMode ? "dark" : ""}`}>{bio}</p> */}
       <div className="social-icons">
-        <a href="https://www.instagram.com/marcelokkk_019" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/marcelokkk_019"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram className="social-icon" />
         </a>
         {/* <a href="#" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="social-icon" />
         </a> */}
       </div>
-      <ReactMarkdown className={`readme ${darkMode ? 'dark' : ''}`} children={readme} />
-      <h2 className={`projects-title ${darkMode ? 'dark' : ''}`}>Meus Projetos</h2>
+      <ReactMarkdown
+        className={`readme ${darkMode ? "dark" : ""}`}
+        children={readme}
+      />
+      <h2 className={`projects-title ${darkMode ? "dark" : ""}`}>
+        Meus Projetos
+      </h2>
       <div className="projects">
         {projects.map((project) => (
           <button
             key={project.id}
-            className={`project-button ${darkMode ? 'dark' : ''}`}
-            onClick={() => window.open(project.html_url, '_blank')}
+            className={`project-button ${darkMode ? "dark" : ""}`}
+            onClick={() => window.open(project.html_url, "_blank")}
           >
             {project.name}
           </button>

@@ -20,10 +20,8 @@ const Home = () => {
 
     const fetchReadme = async () => {
       try {
-        const response = await axios.get('https://api.github.com/repos/marfpss/marfpss/readme');
-        const { content } = response.data;
-        const decodedContent = atob(content);
-        setReadme(decodedContent);
+        const response = await axios.get('https://raw.githubusercontent.com/marfpss/portfolio/master/bio.md');
+        setReadme(response.data);
       } catch (error) {
         console.log(error);
       }

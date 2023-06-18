@@ -25,20 +25,17 @@ Para executar o meu portfólio em sua máquina local, siga as etapas abaixo:
 Para executar o meu portfólio em sua máquina local, siga as etapas abaixo:
 
 1. Clone o repositório e acesse a pasta do projeto:
-
    ```shell
    git clone https://github.com/marfpss/portfolio.git 
    ```
 2. Instale as dependências:
-   
    ```shell
    npm install
    ```
 3. Inicie o servidor de desenvolvimento: 
-
-  ```shell
-  npm start
-  ```
+   ```shell
+   npm start
+   ```
 4. Abra o seu navegador e acesse http://localhost:3000 para visualizar o portfólio em execução.  
 
 # Contribuição

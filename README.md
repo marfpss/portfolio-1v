@@ -22,17 +22,18 @@ Acesse o [meu portfólio](https://marfpss.netlify.app/) para ver o resultado fin
 
 Para executar o meu portfólio em sua máquina local, siga as etapas abaixo:
 
-Para executar o meu portfólio em sua máquina local, siga as etapas abaixo:
-
 1. Clone o repositório e acesse a pasta do projeto:
+
    ```shell
    git clone https://github.com/marfpss/portfolio.git 
    ```
 2. Instale as dependências:
+
    ```shell
    npm install
    ```
 3. Inicie o servidor de desenvolvimento: 
+
    ```shell
    npm start
    ```

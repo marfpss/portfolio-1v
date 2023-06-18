@@ -22,7 +22,7 @@
 }
 
 #root {
-  background: var(--gradiente);
+  background: var(--gradient);
   background-size: cover;
   background-repeat: no-repeat;
   height: fit-content;

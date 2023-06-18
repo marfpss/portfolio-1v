@@ -55,7 +55,9 @@ const Home = () => {
   };
 
   return (
+    
     <div className={`container ${darkMode ? "dark" : ""}`}>
+      
       <img
         src="https://avatars.githubusercontent.com/marfpss"
         alt="Perfil"
@@ -63,12 +65,14 @@ const Home = () => {
       />
       <h1 className="name">
         Marcelo{" "}
-        <button className="toggle-button" onClick={toggleDarkMode}>
-          {darkMode ? <FaSun /> : <FaMoon />}
-        </button>
+        
       </h1>
       {/* <p className={`description ${darkMode ? "dark" : ""}`}>{bio}</p> */}
-      <div className="social-icons">
+      
+      <div className={`social-icons ${darkMode ? "dark" : ""}`}>
+      <button className="toggle-button" onClick={toggleDarkMode}>
+          {darkMode ? <FaSun /> : <FaMoon />}
+        </button>
         <a
           href="https://www.instagram.com/marcelokkk_019"
           target="_blank"

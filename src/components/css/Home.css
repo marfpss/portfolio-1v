@@ -93,6 +93,10 @@
   transition: background-color 0.3s ease;
 }
 
+.project-button:hover {
+  background-color: var(--background-color-1);
+}
+
 .project-button.dark {
   color: var(--text-color-1-dark);
   background-color: var(--background-color-0-dark);
@@ -113,18 +117,18 @@
   vertical-align: middle;
 }
 
-.social-icons {
-  display: inline-block;
-  margin-right: 0.5rem;
+
+.toggle-button.dark {
+  color: var(--text-color-1-dark);
 }
 
 .social-icons .social-icon {
-  font-size: 24px;
-  color: var(--text-color-0);
+  font-size: 30px;
+  color: var(--text-color-1);
   transition: color 0.3s ease;
 }
 
-.social-icons .social-icon:hover {
+.social-icons .social-icon.dark {
   color: var(--text-color-1-dark);
 }
 

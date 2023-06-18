@@ -1,10 +1,9 @@
-
 * {
   box-sizing: border-box;
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--cor-primaria-escura) var(--cor-primaria);
+  scrollbar-color: var(--cor-primaria-escura) var(--cor-secundaria-clara);
 }
 
 *::-webkit-scrollbar {
@@ -13,13 +12,13 @@
 
 
 *::-webkit-scrollbar-track {
-  background: var(--cor-primaria);
+  background: var(--cor-secundaria-clara);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--cor-primaria);
+  background-color: var(--houver);
   border-radius: 20px;
-  border: 1px solid var(--cor-primaria);
+  border: 1px solid var(--cor-secundaria-clara);
 }
 
 #root {

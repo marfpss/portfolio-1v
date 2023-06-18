@@ -16,7 +16,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--houver);
+  background-color: var(--cor-primaria-escura);
   border-radius: 20px;
   border: 1px solid var(--cor-secundaria-clara);
 }

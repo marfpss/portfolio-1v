@@ -1,22 +1,23 @@
 :root {
-  --cor-primaria: #104088;
-  --cor-primaria-escura: #ffffff;
-  --cor-primaria-clara: #1636a0;
-
-  --cor-secundaria: #000000;
-  --cor-secundaria-escura: #000000;
-  --cor-secundaria-clara: #0036ab;
-
-  --cor-fundo: var(--gradiente);
-  --cor-fundo-escuro: var(--gradiente);
-  --cor-fundo-claro: #484848;
-  --cor-fundo-card: #000000ab;
-
-  --cor-texto: #ffffff;
-  --cor-texto-night: #000000;
-  --cor-texto-claro: #eeeeee;
-  --cor-texto-suave: #aaaaaa;
-
-  --gradiente: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  --background-color-0: #fff;
+  --background-color-1: #f2f2f2;
+  --background-color-0-dark: #0a0909;
+  --background-color-1-dark: #333333;
+  --box-shadow-color-1: #0000001a;
+  --text-color-0: #004cff;
+  --text-color-1: #000;
+  --text-color-1-dark: #ffffff;
+  --primary-color: #0062ff;
+  --primary-color-light: #2485e0;
+  --primary-color-dark: #033a70;
+  --secondary-color: #6c757d;
+  --secondary-color-light: #9aa5ab;
+  --secondary-color-dark: #465057;
+  --red-color: #dc3545;
+  --green-color: #28a745;
+  --yellow-color: #ffc107;
+  --purple-color: #6f42c1;
+  --pink-color: #e83e8c;
+  --orange-color: #fd7e14;
+  --gradient: linear-gradient(90deg, var(--primary-color), var(--primary-color-light));
 }
-

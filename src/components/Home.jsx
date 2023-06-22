@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import { FaSun, FaMoon, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./css/Home.css";
 
+
 const Home = () => {
   const [bio, setBio] = useState("");
   const [readme, setReadme] = useState("");

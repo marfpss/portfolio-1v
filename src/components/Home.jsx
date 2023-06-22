@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 import { FaSun, FaMoon, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./css/Home.css";
 
-
 const Home = () => {
   const [bio, setBio] = useState("");
   const [readme, setReadme] = useState("");
@@ -54,36 +53,41 @@ const Home = () => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
-
   return (
-    
     <div className={`container ${darkMode ? "dark" : ""}`}>
-      
       <img
         src="https://avatars.githubusercontent.com/marfpss"
         alt="Perfil"
         className="profile-image"
       />
-      <h1 className="name">
-        Marcelo{" "}
-        
-      </h1>
-      {/* <p className={`description ${darkMode ? "dark" : ""}`}>{bio}</p> */}
-      
+      <h1 className="name">Marcelo</h1>
       <div className={`social-icons ${darkMode ? "dark" : ""}`}>
-      <button className="toggle-button" onClick={toggleDarkMode}>
-          {darkMode ? <FaSun /> : <FaMoon />}
+      <button
+          className={`toggle-button ${darkMode ? "dark" : ""}`}
+          onClick={toggleDarkMode}
+        >
+          {darkMode ? <FaSun color="white" /> : <FaMoon color="black" />}
         </button>
         <a
           href="https://www.instagram.com/marcelokkk_019"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram className="social-icon" />
+          <FaInstagram
+            className={`social-icon ${darkMode ? "dark" : ""}`}
+            color={darkMode ? "white" : "black"}
+          />
         </a>
-        {/* <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="social-icon" />
-        </a> */}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin
+            className={`social-icon ${darkMode ? "dark" : ""}`}
+            color={darkMode ? "white" : "black"}
+          />
+        </a>
       </div>
       <ReactMarkdown
         className={`readme ${darkMode ? "dark" : ""}`}

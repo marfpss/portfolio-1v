@@ -5,7 +5,7 @@ import { FaSun, FaMoon, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./css/Home.css";
 
 const Home = () => {
-  const [bio, setBio] = useState("");
+  // const [bio, setBio] = useState("");
   const [readme, setReadme] = useState("");
   const [projects, setProjects] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
@@ -13,11 +13,11 @@ const Home = () => {
   useEffect(() => {
     const fetchBio = async () => {
       try {
-        const response = await axios.get(
-          "https://api.github.com/users/marfpss"
-        );
-        const { bio } = response.data;
-        setBio(bio);
+        // const response = await axios.get(
+        //   "https://api.github.com/users/marfpss"
+        // );
+        // const { bio } = response.data;
+        // setBio(bio);
       } catch (error) {
         console.log(error);
       }
@@ -78,8 +78,9 @@ const Home = () => {
             color={darkMode ? "white" : "black"}
           />
         </a>
+        
         <a
-          href="#"
+          href="https://www.linkedin.com/in/marcelo-marfpss-181b80256/"
           target="_blank"
           rel="noopener noreferrer"
         >

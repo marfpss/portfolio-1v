@@ -1,20 +1,18 @@
-
 import React, { Component } from 'react';
 import './App.css';
 import Home from './components/Home';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isHomePage: true,
-    };
-  }
+  state = {
+    isHomePage: true,
+  };
 
   render() {
+    const { isHomePage } = this.state;
+
     return (
-      <div className="App">
-        {this.state.isHomePage && <Home />}
+      <div className={`App ${isHomePage ? 'home-page' : ''}`}>
+        {isHomePage && <Home />}
       </div>
     );
   }

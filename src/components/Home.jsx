@@ -5,54 +5,34 @@ import { FaSun, FaMoon, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./css/Home.css";
 
 const Home = () => {
-  // const [bio, setBio] = useState("");
   const [readme, setReadme] = useState("");
   const [projects, setProjects] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const fetchBio = async () => {
+    const fetchData = async () => {
       try {
-        // const response = await axios.get(
-        //   "https://api.github.com/users/marfpss"
-        // );
-        // const { bio } = response.data;
-        // setBio(bio);
+        const [readmeResponse, projectsResponse] = await Promise.all([
+          axios.get(
+            "https://raw.githubusercontent.com/marfpss/portfolio/master/bio.md"
+          ),
+          axios.get("https://api.github.com/users/marfpss/repos")
+        ]);
+
+        setReadme(readmeResponse.data);
+        setProjects(projectsResponse.data);
       } catch (error) {
         console.log(error);
       }
     };
 
-    const fetchReadme = async () => {
-      try {
-        const response = await axios.get(
-          "https://raw.githubusercontent.com/marfpss/portfolio/master/bio.md"
-        );
-        setReadme(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    const fetchProjects = async () => {
-      try {
-        const response = await axios.get(
-          "https://api.github.com/users/marfpss/repos"
-        );
-        setProjects(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchBio();
-    fetchReadme();
-    fetchProjects();
+    fetchData();
   }, []);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prevDarkMode) => !prevDarkMode);
   };
+
   return (
     <div className={`container ${darkMode ? "dark" : ""}`}>
       <img
@@ -62,7 +42,7 @@ const Home = () => {
       />
       <h1 className="name">Marcelo</h1>
       <div className={`social-icons ${darkMode ? "dark" : ""}`}>
-      <button
+        <button
           className={`toggle-button ${darkMode ? "dark" : ""}`}
           onClick={toggleDarkMode}
         >
@@ -78,7 +58,6 @@ const Home = () => {
             color={darkMode ? "white" : "black"}
           />
         </a>
-        
         <a
           href="https://www.linkedin.com/in/marcelo-marfpss-181b80256/"
           target="_blank"
@@ -90,13 +69,8 @@ const Home = () => {
           />
         </a>
       </div>
-      <ReactMarkdown
-        className={`readme ${darkMode ? "dark" : ""}`}
-        children={readme}
-      />
-      <h2 className={`projects-title ${darkMode ? "dark" : ""}`}>
-        Meus Projetos
-      </h2>
+      <ReactMarkdown className={`readme ${darkMode ? "dark" : ""}`} children={readme} />
+      <h2 className={`projects-title ${darkMode ? "dark" : ""}`}>Meus Projetos</h2>
       <div className="projects">
         {projects.map((project) => (
           <button
